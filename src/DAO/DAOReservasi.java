@@ -25,7 +25,7 @@ public class DAOReservasi implements IDAOReservasi{
     
     Connection connection;
     final String insert = "INSERT INTO reservation (id, guest_id, room_id,tanggalCheckIn, tanggalCheckOut, status) VALUES (?, ?, ?, ?,?,?);";
-    final String update = "UPDATE reservation set guest_id=?, room_id=?, tanggalCheckIn=?, tanggalCheckOut=?, status=?, where id=? ;";
+    final String update = "UPDATE reservation set guest_id=?, room_id=?, tanggalCheckIn=?, tanggalCheckOut=?, status=? where id=? ;";
     final String delete = "DELETE FROM reservation where id=? ;";
     final String select = "SELECT * FROM reservation";
     //final String carinama = "SELECT * FROM reservation where nama like ?";
